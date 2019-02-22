@@ -1,16 +1,15 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from "react-dom";
 
 // Components
 import Header from './components/header';
 
 
-const App = ()=> {
+const App = () => {
     return (
         <div className="lowText">
             <Header/>
         </div>
     )
-}
-
+};
 ReactDOM.render(<App/>, document.querySelector('#root'));
