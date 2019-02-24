@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "New ES6 pgrade available",
+    "feed": "Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet."
+  },
+  {
+    "id": 2,
+    "title": "Creating a React native app",
+    "feed": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."
+  },
+  {
+    "id": 3,
+    "title": "REACT developers wanted all over belgium",
+    "feed": "Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet."
+  },
+  {
+    "id": 4,
+    "title": "Say what again. I dare you...",
+    "feed": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor."
+  }
+]
