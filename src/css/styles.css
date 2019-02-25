@@ -1,5 +1,54 @@
-body {margin: 0;}
+body {margin: 0;font-family: Karla}
 
-header {background: #d59414;}
+header {
+    height: 20vh;
+}
 
-.time {color: #d5363c;}
+.time {color: #d5363c;     justify-content: space-between;
+}
+
+.center {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px 20% 8px 20%;
+    text-align: -moz-center;
+}
+
+.border-bottom {
+    border-bottom: 1px solid grey;
+}
+
+.flex {
+    display: flex;
+    width: 100%;
+}
+
+/*------------INPUT-----------*/
+
+input.shake {
+    animation-name: shaker;
+    animation-duration: 200ms;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+}
+
+input:focus {
+    outline: 0;
+    color: #f2fbe6;
+}
+
+input::placeholder {
+    color: #1976D2;
+}
+
+input {
+    border: 0;
+    border-bottom: 2px solid #1976D2;
+    width: 100%;
+    font-size: 30px;
+    line-height: 35px;
+    height: 30px;
+    text-align: center;
+    background: transparent;
+    color: #BBDEFB;
+}

@@ -13,7 +13,6 @@ const NewsList = (props) => {
 
     return (
         <div>
-            <div>News List</div>
             {items}
         </div>
     );
