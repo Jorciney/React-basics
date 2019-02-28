@@ -1,40 +1,20 @@
-import React, {Component} from 'react';
+import React from 'react';
 import '../../src/css/styles.css'
 
-class Header extends Component {
-
-    state = {
-        active: false,
-        keywords: ''
-    };
-
-    onInputChangeHandler = (event) => {
-        this.setState({
-            active: !!event.target.value,
-            keywords: event.target.value
-        });
-    };
-
-
-    render() {
-        console.log(this.state.keywords);
-
-
-        return (<header style={{background: `${this.state.active ? '#65D578' : '#F78A1F'}`}}>
-            <div className={'center'}>
-                <div className={'flex'}>
-                    <div> JDC</div>
-                    <div className={'time'}> {new Date().toLocaleString(undefined, {
-                        hour: '2-digit',
-                        minute: '2-digit',
-                    })}</div>
-                </div>
-                <h2>Welcome to JDC News</h2>
-                <input onChange={(e) => this.onInputChangeHandler(e)}/>
+const Header = (props) => {
+    return (<header style={{background: `${props.searchTerm ? '#65D578' : '#F78A1F'}`}}>
+        <div className={'center'}>
+            <div className={'flex'}>
+                <div> JDC</div>
+                <div className={'time'}> {new Date().toLocaleString(undefined, {
+                    hour: '2-digit',
+                    minute: '2-digit',
+                })}</div>
             </div>
-            <p>{this.state.keywords}</p>
-        </header>);
-    }
-}
+            <h2>Welcome to JDC News</h2>
+            <input onChange={props.keywords}/>
+        </div>
+    </header>);
+};
 
 export default Header;

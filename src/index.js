@@ -8,17 +8,22 @@ import NewsList from './components/news_list';
 
 
 class App extends Component {
-    state ={
-        news: JSON
+    state = {
+        news: JSON,
+        searchTerm: undefined
     };
 
+    getKeyWord = (event) => {
+        this.setState({ searchTerm: event.target.value });
+        return this.searchTerm;
+    };
 
     render() {
-        console.log(JSON);
         return (
             <div className="lowText">
-                <Header/>
+                <Header searchTerm={this.state.searchTerm} keywords={this.getKeyWord}/>
                 <NewsList news={this.state.news}/>
+                <div>{this.state.searchTerm}</div>
             </div>
         )
     }
